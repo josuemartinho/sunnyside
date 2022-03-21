@@ -1,0 +1,146 @@
+body * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  display: block;
+  font-family: "Barlow", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+h1,
+h2,
+a,
+p,
+img {
+  text-decoration: none;
+  font-style: none;
+  margin: 0;
+  padding: 0;
+}
+a {
+  color: hsl(0, 0%, 100%);
+}
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* PARTE DO MENU */
+.header-bg {
+  background-color: #3dbeff;
+}
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 24px;
+}
+
+.header-menu {
+  display: flex;
+  gap: 8px;
+}
+.header-menu a {
+  font-weight: 18px;
+  padding: 14px 20px;
+  display: block;
+}
+.btn {
+  font-family: "Fraunces";
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 50px;
+  color: hsl(212, 27%, 19%);
+}
+.btn:hover {
+  background-color: #6ed0ff;
+  color: hsl(0, 0%, 100%);
+}
+
+/* CONTEUDO */
+
+.conteudo {
+  background: url(./img/desktop/image-header.jpg) no-repeat center;
+  height: 580px;
+  background-size: cover;
+}
+.titulo {
+  display: grid;
+  justify-content: center;
+  gap: 80px;
+}
+.titulo h1 {
+  font-family: "Fraunces", sans-serif;
+  text-transform: uppercase;
+  font-size: 3rem;
+  letter-spacing: 8px;
+  text-align: center;
+  color: hsl(0, 0%, 100%);
+  padding-top: 80px;
+}
+.arrow-down {
+  justify-self: center;
+}
+
+/* informaçoes */
+.information {
+  background-color: #fffbf8;
+}
+
+.box-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.info-img img {
+  width: 100%;
+  object-fit: contain;
+}
+.info-text {
+  padding: 120px 80px 0 80px;
+  text-align: left;
+}
+.info-text h2 {
+  font-family: "Fraunces";
+  font-size: 4rem;
+  margin-bottom: 24px;
+  color: #1c2838;
+}
+.info-text p {
+  color: #9596aa;
+  margin-bottom: 36px;
+  font-size: 1.3rem;
+}
+.link-red,
+.link-yellow {
+  color: #1c2838;
+  font-size: 1.2rem;
+  font-family: "Fraunces";
+}
+.link-red:after,
+.link-yellow:after {
+  content: "";
+  display: block;
+  width: 140px;
+  height: 8px;
+  border-radius: 30px;
+}
+
+.link-red:after {
+  background-color: #ffdbd3;
+}
+.link-yellow:after {
+  background-color: #ffefbc;
+}
+.link-yelow:hover:after {
+  background-color: #f7c200;
+}
+.link-red:hover:after {
+  background-color: #fd7565;
+}
