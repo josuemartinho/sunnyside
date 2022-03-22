@@ -10,6 +10,7 @@ body {
   margin: 0;
   padding: 0;
   font-size: 16px;
+  background-color: #fffbf8;
 }
 
 h1,
@@ -90,9 +91,6 @@ li {
 }
 
 /* informaçoes */
-.information {
-  background-color: #fffbf8;
-}
 
 .box-info {
   display: grid;
@@ -143,4 +141,43 @@ li {
 }
 .link-red:hover:after {
   background-color: #fd7565;
+}
+
+/* services */
+.services {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.services img {
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+.info-text-1,
+.info-text-2 {
+  position: absolute;
+  text-align: center;
+}
+
+/* testimonails */
+.testimonials {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+}
+
+.client-title {
+  grid-column: 1/-1;
+  font-family: "Fraunces", sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 20px;
+  color: hsl(213, 9%, 39%);
+  padding: 80px 0 40px;
+}
+
+.client img {
+  border-radius: 50%;
+  width: 100px;
 }
